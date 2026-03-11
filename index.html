@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | Login</title>
+    <link rel="icon" href="assets/logo.png">
+    <!-- tailwind+daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+    <body class="lg:min-h-screen lg:max-w-md lg:bg-base-200 lg:mx-auto">
+        <div class="logo pb-8">
+            <img src="assets/Logo-full.png" class="w-[200px] mx-auto pt-52" alt="">
+        </div>
+        <div class="form w-100 mx-auto">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow rounded-[24px]">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-black text-[16px] font-semibold ">Mobile Number</label>
+                        <input id="input-number" maxlength="11" minlength="11" type="number" class="input bg-base-200 rounded-full w-[338px] h-[52px] px-5 py-4" value="01721316594" placeholder="Enter your number" />
+                        <br>
+                        <label class="label text-black text-[16px] font-medium">4 Digit Pin</label>
+                        <input id="input-pass" type="password" class="bg-base-200 input rounded-full w-[338px] h-[52px] px-5 py-4" placeholder="Enter 4 Digit Pin" />
+                        <br>
+                        <button id="login-btn" class="btn btn-neutral px-5 py-4 text-white bg-[#3B25C1] w-[338px] h-[52px] rounded-[32px] font-semibold text-[20px]">Login</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+    <!-- <body class="min-h-screen bg-base-200">
+        <div class="container  bg-green-200 mx-auto px-4">
+            <div class="logo pb-8">
+                <img src="assets/Logo-full.png" class="w-[200px] mx-auto pt-52" alt="">
+            </div>
+            <div class="form w-full max-w-sm mx-auto">
+                <div class="card bg-base-100 w-full shadow rounded-[24px]">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label text-black text-[16px] font-semibold">Mobile Number</label>
+                            <input id="input-number" maxlength="11" minlength="11" type="text" inputmode="numeric" pattern="[0-9]{11}" class="input bg-base-200 rounded-full w-full h-[52px] px-5 py-4" placeholder="Enter your number" title="Please enter exactly 11 digits" />
+                            
+                            <label class="label text-black text-[16px] font-medium mt-4">4 Digit Pin</label>
+                            <input id="input-pass" maxlength="4" minlength="4" type="password" inputmode="numeric" pattern="[0-9]{4}" class="bg-base-200 input rounded-full w-full h-[52px] px-5 py-4" placeholder="Enter 4 Digit Pin" title="Please enter exactly 4 digits" />
+                            
+                            <button id="login-btn" class="btn btn-neutral px-5 py-4 text-white bg-[#3B25C1] w-full h-[52px] rounded-[32px] font-semibold text-[20px] mt-4">Login</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body> -->
+</html>
